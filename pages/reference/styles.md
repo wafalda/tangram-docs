@@ -1,7 +1,7 @@
-*This is the technical documentation for Tangram's styling system. For a conceptual overview of the styling system, see the [Styles Overview](Styles-Overview.md).*
+*This is the technical documentation for Tangram's styling system. For a conceptual overview of the styling system, see the [Styles Overview](../overview/styles.md).*
 
 ####`styles`
-The `styles` element is an optional top-level element in the [scene file](scene-file.md). It takes only one kind of element, the _style name_.
+The `styles` element is an optional top-level element in the [scene file](../overview/scene-file.md). It takes only one kind of element, the _style name_.
 
 Styles defined under this element can be referenced by name inside a [draw](draw.md) group with the `style` parameter.
 ```yaml
@@ -42,7 +42,7 @@ styles:
         base: points
 ```
 
-For more, see the [Styles Overview](Styles-Overview.md#draw-styles).
+For more, see the [Styles Overview](../overview/styles.md#draw-styles).
 
 ####`mix`
 Optional _string_ or _list_, naming one or more custom styles. No default.
@@ -63,7 +63,7 @@ styles:
         mix: [styleA, styleB, styleC]
 ```
 
-For more, see the [Styles Overview](Styles-Overview.md#style-composition-with-mix).
+For more, see the [Styles Overview](../overview/styles.md#style-composition-with-mix).
 
 
 ####`animated`
@@ -106,7 +106,7 @@ styles:
 ####`texcoords`
 Optional _boolean_, `true` or `false`. When `true`, the geometry will be assigned texture coordinates, for use with `material`s which use `texture`s.
 
-Note that `texture` objects must be accompanied by a `mapping` parameter – for more, see [textures](textures.md).
+Note that `texture` objects must be accompanied by a `mapping` parameter – for more, see [textures](../textures.md).
 ```yaml
 styles:
     monsters:
@@ -138,7 +138,7 @@ styles:
 ```
 
 ####`url`
-Optional _URL_. Imports a style definition from a URL. The URL should point to a YAML file that includes one or more style definitions, in the same format they appear under the top-level `styles` element in the [scene file](scene-file.md).
+Optional _URL_. Imports a style definition from a URL. The URL should point to a YAML file that includes one or more style definitions, in the same format they appear under the top-level `styles` element in the [scene file](../overview/scene-file.md).
 
 ```yaml
 styles:

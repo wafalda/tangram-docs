@@ -1,4 +1,4 @@
-*This is the technical documentation for Tangram's styling system. For a conceptual overview of the styling system, see the [Styles Overview](Styles-Overview.md).*
+*This is the technical documentation for Tangram's styling system. For a conceptual overview of the styling system, see the [Styles Overview](../overview/styles.md).*
 
 ####`draw`
 The `draw` element is a required element in the [layer](layers.md) and [sublayer](layers.md#sublayer) elements. It defines the beginning of a _draw group_. There can be only one `draw` group per `layer` or _sublayer_.
@@ -37,7 +37,7 @@ Rules defined in `draw` blocks will descend into any sublayers.
 ## style parameters
 
 ####`style`
-Optional _string_, naming a style defined in the [`styles`](styles.md) block. Any style named here will be applied after the other parameters defined in the `draw` block, using them for inputs. For instance, if a `color` is set in the `draw` block and a `style` is also named, that alpha will be available to any `shader` defined in the `style`. For more on this interaction, see [Materials Overview](Materials-Overview.md) and [Shaders Overview](Shaders-Overview.md).
+Optional _string_, naming a style defined in the [`styles`](styles.md) block. Any style named here will be applied after the other parameters defined in the `draw` block, using them for inputs. For instance, if a `color` is set in the `draw` block and a `style` is also named, that alpha will be available to any `shader` defined in the `style`. For more on this interaction, see [Materials Overview](../overview/materials.md) and [Shaders Overview](../overview/shaders.md).
 ```yaml
 draw:
     style: normalripples
@@ -64,7 +64,7 @@ layers:
 ####`interactive`
 Optional _boolean_ or _function_ returning `true` or `false`. Default is `false`.
 
-When `true`, activates _Feature Selection_ – the feature can be queried via the [JavaScript API](Javascript-API.md).
+When `true`, activates _Feature Selection_ – the feature can be queried via the [JavaScript API](../javascript-api.md).
 
 ```yaml
 draw:

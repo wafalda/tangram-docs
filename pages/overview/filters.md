@@ -1,10 +1,10 @@
-Tangram is designed to work with vector tiles in a number of formats. Data sources are specified in the [`sources`](sources.md) block of Tangram's scene file. Once a datasource is specified, **filters** allow you to style different parts of your data in different ways.
+Tangram is designed to work with vector tiles in a number of formats. Data sources are specified in the [`sources`](../reference/sources.md) block of Tangram's scene file. Once a datasource is specified, **filters** allow you to style different parts of your data in different ways.
 
 The Tangram scene file filters data in two ways: with top-level **layer filters** and lower-level **feature filters**.
 
 ## Layer filters
 
-Vector tiles typically contain top-level structures which can be thought of as "layers" – inside a GeoJSON file, these would be the _FeatureCollection_ objects. Inside a Tangram scene file, the [`layer`](layer.md) object allows you to split the data by layer, by matching against the layer name.
+Vector tiles typically contain top-level structures which can be thought of as "layers" – inside a GeoJSON file, these would be the _FeatureCollection_ objects. Inside a Tangram scene file, the [`layer`](../reference/layer.md) object allows you to split the data by layer, by matching against the layer name.
 
 ```yaml
 layers:
@@ -62,7 +62,7 @@ Using sublayers and inheritance, you may specify increasingly specific filters a
 
 ## Matching
 
-Each feature in a `layer` is first tested against each top-level `filter`, and if the feature's data matches the filter, that feature will be assigned any associated [`draw`](draw.md) styles, and passed on to any _sublayers_. If any _sublayer_ filters match the feature, that _sublayer_'s `draw` styles will overwrite any previously-assigned styling rules for those matching features, and so on down the chain of inheritance.
+Each feature in a `layer` is first tested against each top-level `filter`, and if the feature's data matches the filter, that feature will be assigned any associated [`draw`](../reference/draw.md) styles, and passed on to any _sublayers_. If any _sublayer_ filters match the feature, that _sublayer_'s `draw` styles will overwrite any previously-assigned styling rules for those matching features, and so on down the chain of inheritance.
 
 Feature filters can match any named feature property in the data, as well as a few special _reserved keywords_.
 

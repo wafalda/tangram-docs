@@ -1,7 +1,7 @@
-*This is the technical documentation for the "layers" block in Tangram's scene file. For a conceptual overview of the way Tangram applies styles to data, see the [Filters Overview](Filters-Overview.md) and the [Styles Overview](Styles-Overview.md).*
+*This is the technical documentation for the "layers" block in Tangram's scene file. For a conceptual overview of the way Tangram applies styles to data, see the [Filters Overview](../overview/filters.md) and the [Styles Overview](../overview/styles.md).*
 
 ####`layers`
-The `layers` element is a required top-level element in the [scene file](scene-file.md). It has only one kind of sub-element: a *layer name*, which defines individual layers with a layer filter.
+The `layers` element is a required top-level element in the [scene file](../overview/scene-file.md). It has only one kind of sub-element: a *layer name*, which defines individual layers with a layer filter.
 
 ```yaml
 layers:
@@ -30,7 +30,7 @@ layers:
 ####`filter`
 Optional _object_ or _function_. No default.
 
-A `filter` element may be included once in any layer or sublayer. Only features matching the filter will be included in that layer (and its sublayers). For more on the filtering system, see [Filters Overview](Filters-Overview.md).
+A `filter` element may be included once in any layer or sublayer. Only features matching the filter will be included in that layer (and its sublayers). For more on the filtering system, see [Filters Overview](../overview/filters.md).
 
 ```yaml
 layers:
@@ -62,7 +62,7 @@ layers:
 ####sublayer name
 Optional _string_. Can be anything except the other sublayer parameter: "draw", "filter", and "properties". No default.
 
-Defines a _sublayer_. Sublayers can have all `layer` parameters except `data`, and can be nested. `draw` and `filter` definitions are inherited, and match simultaneously – see the [Filters Overview](Filters-Overview.md).
+Defines a _sublayer_. Sublayers can have all `layer` parameters except `data`, and can be nested. `draw` and `filter` definitions are inherited, and match simultaneously – see the [Filters Overview](../overview/filters.md).
 
 ```yaml
 layers:

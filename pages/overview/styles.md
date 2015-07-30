@@ -1,6 +1,6 @@
 Tangram currently has four built-in _draw styles_: `polygons`, `lines`, `points`, and `text`. Each draw style displays data in a different way, and some of them require specific data types and properties.
 
-Draw styles are referenced in two places in the scene file: when defining custom [styles](styles.md) and again in [draw](draw.md) groups.
+Draw styles are referenced in two places in the scene file: when defining custom [styles](../reference/styles.md) and again in [draw](../reference/draw.md) groups.
 
 ## draw styles
 
@@ -46,11 +46,11 @@ Styles which are extensions of the `polygons` draw style can take the following 
 - `texcoords`
 - `animated`
 - `blend`
-- `materials` : see [materials](materials.md)
-- `shaders`: see [shaders](shaders.md)
+- `materials` : see [materials](../reference/materials.md)
+- `shaders`: see [shaders](../reference/shaders.md)
 
 #### `polygons` shader specs
-The `polygons` style allows [shaders](shaders.md) to be written which take advantage of certain unique attributes and uniforms.
+The `polygons` style allows [shaders](../reference/shaders.md) to be written which take advantage of certain unique attributes and uniforms.
 
 ## lines
 The *lines* style requires a datasource containing connected coordinates. Thus it can accept either linear or polygonal input data. It draws a rectangle along each line segment, and can optionally draw special `joins` and `caps`.
@@ -61,11 +61,11 @@ Styles which are extensions of the `lines` draw style can take the following par
 - `texcoords`
 - `animated`
 - `blend`
-- `materials` : see [materials](materials.md)
-- `shaders`: see [shaders](shaders.md)
+- `materials` : see [materials](../reference/materials.md)
+- `shaders`: see [shaders](../reference/shaders.md)
 
 #### `lines` shader specs
-The `lines` draw style allows [shaders](shaders.md) to be written which take advantage of certain unique attributes and uniforms.
+The `lines` draw style allows [shaders](../reference/shaders.md) to be written which take advantage of certain unique attributes and uniforms.
 
 ## points
 The `points` draw style is used to draw dots or sprites at points of interest. It also builds a rectangle at a point, and can be colored in a variety of ways:
@@ -92,7 +92,7 @@ Styles which are extensions of the `text` style can take the following special p
 - `font` - Sets font's typeface, style, size, color, and outline.
 - `priority` - Sets the label priority of the feature.
 
-See the [draw](draw.md#text) entry.
+See the [draw](../reference/draw.md#text) entry.
 
 ## style composition with `mix`
 

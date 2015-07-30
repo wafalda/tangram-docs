@@ -162,7 +162,7 @@ width: function () { return 2.5 * Math.log(zoom); }
 
 #### `$zoom`
 
-The `$zoom` keyword may be used to define [filters](filters.md) with optional `min` and `max` parameters.
+The `$zoom` keyword may be used to define [filters](../filters.md) with optional `min` and `max` parameters.
 
 ```yaml
 outline:
@@ -171,7 +171,7 @@ outline:
 
 #### `$geometry`
 
-The `$geometry` keyword can specify a [filter](filters.md) to match a specific type of geometry, for cases when a FeatureCollection includes multiple geometry types:
+The `$geometry` keyword can specify a [filter](../filters.md) to match a specific type of geometry, for cases when a FeatureCollection includes multiple geometry types:
 
 ```yaml
 labels:

@@ -1,8 +1,8 @@
-*This is the technical documentation for Tangram’s lights. For a conceptual overview of the lighting system, see the [Lights Overview](Lights-Overview.md).*
+*This is the technical documentation for Tangram’s lights. For a conceptual overview of the lighting system, see the [Lights Overview](../overview/lights.md).*
 
 #### `Lights`
 
-The `lights` element is a top-level element in the [scene file](scene-file.md). Individual lights are defined by a *light name* under this element.
+The `lights` element is a top-level element in the [scene file](../overview/scene-file.md). Individual lights are defined by a *light name* under this element.
 
 ```yaml
 lights:
